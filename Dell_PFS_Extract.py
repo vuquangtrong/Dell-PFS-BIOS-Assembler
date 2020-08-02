@@ -8,7 +8,7 @@ Added functions:
 	-d: disassemble BIOS entries to raw files, each raw file includes its header and payload
 
 The "Disassemble" option is to use with Dell PFS BIOS Assembler,
-	at https://github.com/vuquangtrong/DellBiosPfsAssembler
+	at https://github.com/vuquangtrong/Dell-PFS-BIOS-Assembler
 """
 
 """

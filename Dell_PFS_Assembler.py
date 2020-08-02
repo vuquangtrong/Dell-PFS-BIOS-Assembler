@@ -5,7 +5,7 @@ Dell PFS BIOS Assembler v0.1
 Copyright (C) 2020 Vu Quang Trong
 
 You will need Dell PFS BIOS Extractor v4.5.1
-    at https://github.com/vuquangtrong/DellBiosPfsAssembler
+    at https://github.com/vuquangtrong/Dell-PFS-BIOS-Assembler
     to prepare BIOS entry raw files
 
 To make Dell BIOS executable file, you will need
