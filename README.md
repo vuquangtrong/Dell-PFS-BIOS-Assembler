@@ -1,10 +1,29 @@
 # Dell PFS BIOS Assembler
 This script makes **Downgrade-able BIOS update** file from Dell original BIOS updates.  
 
-Tutorial: [Downgrade BIOS on Dell's blocked downgrade machines][0]  
+Tutorial: [Downgrade BIOS on Dell's blocked downgrade machines][0]
 
-*Even thought inputs of assembler are Dell's original and signed files, downgrading to older BIOS version without understanding about how BIOS components work together can harm your machine.*  
+Discuss on reddit: [I can Downgrade Dell BIOS to older version by making new Dell BIOS update file][6]
+
+*Even thought inputs of assembler are Dell's original and signed files, downgrading to older BIOS version without understanding about how BIOS components work together can harm your machine.*
+  
 ***Do it with your own risk.***
+
+## Old BIOS version has better performance and power usage
+I have a **Dell Vostro 7580** and use **ThrottleStop** to undervolt, monitor power state, and benchmark
+Below tests were measured with the same conditions of drivers, hardware, except BIOS update. I wrote it in [this comment][5]
+
+**on BIOS 1.11.1**  
+- Benchmark for 1024MB on 12 threads took around 120 seconds
+- In idle, when plug both external HDMI and VGA, CPU was 90% of time at C7 power package state, and consumed only 0.5W
+
+**on BIOS 1.12.2**  
+- Benchmark for the same 1024MB on 12 thread took 145 seconds or more 
+- In idle, when plug both external HDMI and VGA, CPU was 40% of time at C7 power package state, and consumed upto 12W. This is a huge number compared to 0.5W !!!
+
+There obviously are performance and power issues after upgrading to new BIOS.
+
+**Therefore, I really want to downgrade**
 
 ## Problems of Blocked Downgrade
 Recently, Dell has locked BIOS Downgrade functions on some laptop products because they don't allow users to go back to an older BIOS version which had security problems.
@@ -79,3 +98,5 @@ Tutorial: [Downgrade BIOS on Dell's blocked downgrade machines][0]
 [2]: https://www.win-raid.com/t596f39-Intel-Management-Engine-Drivers-Firmware-amp-System-Tools.html
 [3]: https://github.com/vuquangtrong/Dell-PFS-BIOS-Assembler
 [4]: https://github.com/platomav/BIOSUtilities
+[5]: https://www.reddit.com/r/Dell/comments/f45fp4/dell_g5_5587g7_7588_and_vostro_7580_bios_1122/fwk2kbp/
+[6]: https://www.reddit.com/r/Dell/comments/i2dttg/i_can_downgrade_dell_bios_to_older_version_by/
