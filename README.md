@@ -5,7 +5,13 @@ Tutorial: [Downgrade BIOS on Dell's blocked downgrade machines][0]
 
 Discuss on reddit: [I can Downgrade Dell BIOS to older version by making new Dell BIOS update file][6]
 
+**READ BELOW CAREFULLY**
+
 *Even thought inputs of assembler are Dell's original and signed files, downgrading to older BIOS version without understanding about how BIOS components work together can harm your machine.*
+
+*BIOS can be downgraded easily, but Intel ME may not because Intel ME has its own update engine. Main BIOS updater just sends Intel ME FW to ME Engine. You mostly will see a message that "Send Intel ME FW to ..." and it may fail*
+
+*Some BIOS was changed totally in memory map from an old version to a newer version. Please read Dell BIOS update warning carefully. If Dell claims that "once you update BIOS to Y version, you can not go back to X version due to abc, please DO NOT go back further than X. For example, Dell Vostro 7580, from BIOS 1.6.1, it changed system map to include BIOS Remote, so If you're at a higher version, please DO NOT go back to 1.6.1 or ealier one. I broke one of my laptop because of that T.T*
   
 ***Do it with your own risk.***
 
