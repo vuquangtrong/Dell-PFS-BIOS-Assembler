@@ -1,9 +1,11 @@
 # Dell PFS BIOS Assembler
 This script makes **Downgrade-able BIOS update** file from Dell original BIOS updates.  
 
-Tutorial: [Downgrade BIOS on Dell's blocked downgrade machines][0]
+**Due to a claim from Dell that many people have failed to downgrade and their machines could not boot up, the video tutorial is taken down, the reddit thread is closed, and this repo is here as an archive only**
 
-Discuss on reddit: [I can Downgrade Dell BIOS to older version by making new Dell BIOS update file][6]
+Tutorial: [Downgrade BIOS on Dell's blocked downgrade machines][0] Video is removed!
+
+Discuss on reddit: [I can Downgrade Dell BIOS to older version by making new Dell BIOS update file][6] The thread is closed!
 
 **READ BELOW CAREFULLY**
 
@@ -97,9 +99,12 @@ Therefore, you should think about the side effect before re-flashing.
 Execute the new FUU file, or use BIOS Flash Programmer in BIOS menu. After downgrading, re-check your BIOS version and fix issues if needed.
 
 ---
+<!--
 Tutorial: [Downgrade BIOS on Dell's blocked downgrade machines][0]
+-->
 
-[0]: https://youtu.be/7zFAU9DKmVk
+[*]: https://youtu.be/7zFAU9DKmVk
+[0]: ""
 [1]: https://www.win-raid.com/t3553f39-Guide-Unlock-Intel-Flash-Descriptor-Read-Write-Access-Permissions-for-SPI-Servicing.html
 [2]: https://www.win-raid.com/t596f39-Intel-Management-Engine-Drivers-Firmware-amp-System-Tools.html
 [3]: https://github.com/vuquangtrong/Dell-PFS-BIOS-Assembler
